@@ -9,8 +9,6 @@ jobs:
   runs-on: ubuntu-latest
 
   steps:
-      steps:
-
     - uses: actions/checkout@v3
     - name: Install a project with a clean slate
       run: |
@@ -23,8 +21,8 @@ jobs:
       continue-on-error: true
     - name: Copy test execution videos
       run: |
-        mkdir public
-        cp -r cypress/videos public/videos
+        mkdir docs
+        cp -r cypress/videos docs/videos
     - name: Merge test results into one
       run: npm run report:merge
     - name: Generate HTML report
@@ -33,6 +31,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        publish_dir: ./docs
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
