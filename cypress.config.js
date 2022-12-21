@@ -9,10 +9,7 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-  /*reporter: { reporter: "cypress-multi-reporters",
-    reporterOptions: {
-        configFile: "reporter-config.json"
-    }*/
+
     reporter: "cypress-multi-reporters",
     reporterOptions: {
       configFile: "reporter-config.json"

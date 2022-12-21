@@ -24,7 +24,7 @@ $ npm install
 ## Running test:
 ```
 - Running all tests: npx cypress run
-- Running a single test file: npx cypress run --spec "cypress/e2e/tests/1.feature"
+- Running a single test file: npx cypress run --spec "cypress/e2e/tests/products.feature"
 ```
 ## Opening the App:
 ```

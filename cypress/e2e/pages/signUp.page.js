@@ -1,11 +1,12 @@
-class SignUpPage {
+import mainPage from "./main.page"
 
-    elements ={
+export default new class SignUpPage extends mainPage{
 
-        loginBtn : () => cy.get('[href="https://portal.telnyx.com/#"]')
+    constructor() {
+        super(),
+        this.loginBtn = () => {return cy.get('[href="https://portal.telnyx.com/#"]')}
     }
     clickLoginBtn() {
-        this.elements.loginBtn().click()
+        this.loginBtn().click()
     }
 }
-module.exports = new SignUpPage ()
