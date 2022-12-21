@@ -20,6 +20,7 @@ To run this project, install it locally:
 ```
 $ git clone https://github.com/PepesSpi123/CypressCucumberTelnyxProject
 $ npm install 
+```
 ## Running test:
 ```
 - Running all tests: npx cypress run
