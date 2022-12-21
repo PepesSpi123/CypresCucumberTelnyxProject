@@ -20,8 +20,7 @@ In this projects:
 To run this project, install it locally:
 ```
 $ git clone https://github.com/PepesSpi123/CypressCucumberTelnyxProject
-$ npm install cypress
-$ npm install @badeball/cypress-cucumber-preprocessor
+$ npm install 
 ```
 ## Running test:
 ```
@@ -41,5 +40,6 @@ Click on the name of test file and watch Cypress open your browser.
 ```
 ## Report:
 ```
-When you run test Cypress generates report automaticly to a folder 'videos'.
+When you run test Cypress generates report automaticly to a folder 'videos'. 
+If the test fails, the screenshots will be uploaded to the folder 'screenshots'.
 ```
