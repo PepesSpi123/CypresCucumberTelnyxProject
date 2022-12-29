@@ -1,4 +1,5 @@
 .DS_Store
 /cypress/screenshots
-/node_modules
+node_modules
 report.json 
+
