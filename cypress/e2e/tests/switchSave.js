@@ -9,7 +9,7 @@ let totalPriceTelnyx = 0
 let totalPriceTwilio = 0
 
 Given ("I visit telnyx.com", () => {
-  cy.visit("https://telnyx.com/");
+  mainPage.goToMain()
   mainPage.acceptCookies()
 });
 

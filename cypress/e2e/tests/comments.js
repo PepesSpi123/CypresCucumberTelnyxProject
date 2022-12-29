@@ -4,7 +4,7 @@ import MainPage from "../pages/main.page";
 const mainPage = new MainPage()
 
 Given ("I visit telnyx.com", () => {
-  cy.visit("https://telnyx.com/");
+  mainPage.goToMain()
   mainPage.acceptCookies()
 });
 When("I scroll down to the customers' comments", () => {

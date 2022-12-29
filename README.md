@@ -29,7 +29,6 @@ $ npm install
 ## Opening the App:
 ```
 - Using npx: npx cypress open
-- The long way with the full path: ./node_modules/.bin/cypress open
 ```
 On opening Cypress, your testing journey begins with the Launchpad. You should choose E2E Testing. Then you need to choose a Browser.
 ## Opening the tests:

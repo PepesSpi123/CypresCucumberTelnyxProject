@@ -10,16 +10,18 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
 
-    reporter: "cypress-multi-reporters",
-    reporterOptions: {
-      configFile: "reporter-config.json"
-    },
+  reporter: "cypress-multi-reporters",
+  reporterOptions: {
+    configFile: "reporter-config.json",
+    charts : true
+  },
   chromeWebSecurity: false,
   defaultCommandTimeout: 10000,
   pageLoadTimeout: 65000,
   //video: false,
   retries	: { "runMode": 2, "openMode": 2 },
   e2e: {
+    baseUrl: 'https://telnyx.com/',
     specPattern: "**/*.feature",
     supportFile: false,
     setupNodeEvents,

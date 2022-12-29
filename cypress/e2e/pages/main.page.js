@@ -31,7 +31,9 @@ export default class MainPage {
     
 
     }
-    
+    goToMain() {
+        cy.visit('/')
+    }
 
     acceptCookies() {
         this.acceptCookiesBtn().click()
