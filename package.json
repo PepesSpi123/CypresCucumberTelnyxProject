@@ -6,8 +6,8 @@
   },
   "scripts": {
     "test:chrome": "cypress run --browser chrome",
-    "report:merge": "mochawesome-merge cypress/results/json/*.json > report.json",
-    "report:generate": "marge .json --reportDir ./docs --assetsDir docs/assets --reportPageTitle report.html"
+    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
+    "report:generate": "marge .json --reportDir ./docs --assetsDir docs/assets --reportPageTitle index.html"
   },
   "devDependencies": {
     "cypress-multi-reporters": "^1.6.2",
