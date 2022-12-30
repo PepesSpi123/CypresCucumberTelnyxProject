@@ -42,7 +42,7 @@ When you run a test, Cypress automatically generates a report to a folder 'video
 If the test fails, the screenshots will be uploaded to the folder 'screenshots'.
 ```
 ## GitHub Pages:
-```
 Automatic report deployment implemented to GitHub Pages:
-- https://pepesspi123.github.io/CypressCucumberTelnyxProject/
+```
+https://pepesspi123.github.io/CypressCucumberTelnyxProject/
 ```
