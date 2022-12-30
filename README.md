@@ -43,5 +43,6 @@ If the test fails, the screenshots will be uploaded to the folder 'screenshots'.
 ```
 ## GitHub Pages:
 ```
-Automatic report deployment implemented to GitHub Pages - https://pepesspi123.github.io/CypressCucumberTelnyxProject/
+Automatic report deployment implemented to GitHub Pages:
+- https://pepesspi123.github.io/CypressCucumberTelnyxProject/
 ```
