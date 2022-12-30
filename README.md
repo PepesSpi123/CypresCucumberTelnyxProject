@@ -37,6 +37,11 @@ Click on the name of the test file and watch Cypress open your browser.
 ```
 ## Report:
 ```
+To see the test results open index.html file in the folder 'docs'
 When you run a test, Cypress automatically generates a report to a folder 'videos'. 
 If the test fails, the screenshots will be uploaded to the folder 'screenshots'.
+```
+## GitHub Pages:
+```
+Automatic report deployment implemented to GitHub Pages - https://pepesspi123.github.io/CypressCucumberTelnyxProject/
 ```
