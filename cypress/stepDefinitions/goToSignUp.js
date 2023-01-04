@@ -1,14 +1,10 @@
-const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import loginPage from '../pages/login.page'
-import MainPage from "../pages/main.page";
+const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
+import loginPage from '../e2e/pages/login.page'
+import MainPage from "../e2e/pages/main.page";
 
 const mainPage = new MainPage()
-Given ("I visit telnyx.com", () => {
-  mainPage.goToMain()
-  mainPage.acceptCookies()
-});
 
-When("I click the button 'Log In'", () => {
+When("I click the button 'Log In' from the home page", () => {
   mainPage.clickLoginBtn()
 });
 

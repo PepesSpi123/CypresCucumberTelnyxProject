@@ -1,7 +1,7 @@
 
 
 
-name: Create a report
+name: Main
 
 on:
   push:

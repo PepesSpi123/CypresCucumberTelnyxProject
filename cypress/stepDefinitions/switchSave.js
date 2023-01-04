@@ -1,5 +1,5 @@
-const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import MainPage from "../pages/main.page";
+const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
+import MainPage from "../e2e/pages/main.page";
 
 const mainPage = new MainPage()
 
@@ -7,15 +7,6 @@ let total_1 = ''
 let total_2 = ''
 let totalPriceTelnyx = 0
 let totalPriceTwilio = 0
-
-Given ("I visit telnyx.com", () => {
-  mainPage.goToMain()
-  mainPage.acceptCookies()
-});
-
-When("I scroll down to the 'Switch + Save with Telnyx'", () => {
-  mainPage.scrollToSwitchSave()
-})
 
 When("I click the 'Make outbound calls' slider element", () => {
   mainPage.clickMakeCallsElement()

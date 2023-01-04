@@ -22,7 +22,7 @@ module.exports = defineConfig({
   retries	: { "runMode": 2, "openMode": 2 },
   e2e: {
     baseUrl: 'https://telnyx.com/',
-    specPattern: "**/*.feature",
+    specPattern: "**/features/*.feature",
     supportFile: false,
     setupNodeEvents,
   },

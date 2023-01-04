@@ -1,11 +1,7 @@
-const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import MainPage from "../pages/main.page";
+const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
+import MainPage from "../e2e/pages/main.page";
 
 const mainPage = new MainPage()
-Given ("I visit telnyx.com", () => {
-  mainPage.goToMain()
-  mainPage.acceptCookies()
-});
 
 When("I click in the menu button", () => {
   mainPage.clickMenuBtn()
@@ -24,9 +20,6 @@ When("I scroll down to the products list", () => {
 })
 When("I choose Explore our products on the main page", () => {
   mainPage.clickExploreProducts()
-})
-When("I scroll down to the footer", () => {
-  mainPage.scrollToFooter()
 })
 When("I click All products on footer", () => {
   mainPage.clickFooterAllProducts()

@@ -1,10 +1,5 @@
-const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
-import signUpPage from "../pages/signUp.page";
-
-Given ("I visit telnyx.com", () => {
-  signUpPage.goToMain()
-  signUpPage.acceptCookies()
-});
+const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
+import signUpPage from "../e2e/pages/signUp.page";
 
 When("I click the button 'Sign up'", () => {
   signUpPage.clickSignUpBtn()
